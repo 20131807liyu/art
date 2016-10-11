@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	ul{list-style:none;margin:0;padding:0;}
+	a{text-decoration:none;}
+	.main{width:100%;height:100%;}
+	.main .nav{width:100%;height:120px;position:absolute;top:0;background:rgba(0,0,0,.3);z-index:1000;}
+	.main .nav ul{width:100%;height:100%;perspective:800px;}
+	.main .nav ul li{width:20%;float:left;text-align:center;height:100%;}
+	.main .nav ul li a{color:#eee;width:100%;height:100%;box-sizing:border-box;padding-top:40px;display:inline-block;border:5px solid transparent;transition:0.4s all linear;transform:translateZ(20px);transform-origin:top;font-size:16px;overflow:hidden;}
+	.main .nav ul li a:hover{color:#fff;border:5px solid #fff;transform:translateZ(0px);}
+	.main .bg{width:100%;height:1200px;background-size:100% 100%;background-image:url(images/bgs03.jpg);background-attachment:fixed;background-repeat:no-repeat;background-position:left bottom;}
+	 .main .head img{width:100%;height:40%;float: left;}
+	 .main .head .text{width: 100%;height: 200px;float: left;text-align: center;float: left;background-color: white;}
+	 .main .head .text p{font-size: 50px;margin-top:20px;letter-spacing:10px;animation-duration:0.5s;animation-timing-function:linear;animation-fill-mode:forwards;animation-name:rotate;}
+	 @keyframes rotate{
+	 	from{transform:translateX(-100%);}
+	 	to{transform:translateX(0);}
+	 }
+	 .main .head .text p span{font-size: 50px;color: blue;}
+	 .main .head .text p:nth-child(2){color: yellow;letter-spacing: 30px;}
+	 /*first区域样式设计*/
+	 .main .first{background-image:url(images/bgs02.jpg);clear: both;}
+	.main .content{width: 100%;height: 570px;float: left;background-color: white;position: relative;}
+	.main .content #pic1{position:absolute;bottom:0;left: 100px}
+	.main .first .content .left{width: 50%;height:50%;float:left;}
+	.main .first .content .right{float:left;width:50%;box-sizing:border-box;padding:15px;}
+	.main .first .content h2{text-align:center;margin-bottom:15px;font-size:35px;font-weight:bolder;color:#000;}
+	.main .first .content .left form{padding:15px 30px;}
+	.main .first .content .left form label{width:30%;text-align:right;height:40px;line-height:40px;display:inline-block;}
+	.main .first .content .left form input[type=text],.main form input[type=password],.main .first .content .left form input[type=date]{height:30px;width:30%;line-height:30px;border-radius:5px;border:none;border:1px solid #ccc;}
+	.main .first .content .left  form input[type=radio]{width:10%;text-align:right;}
+	.main .first .content .left  form input.sub{width:120px;height:40px;background:#5eb95e;color:#fff;border:none;border-radius:5px;font-size:16px;}
+	.main .first .content .left  form span{font-size:14px;}
+	.main .first .content .left  form span em{color:red;font-style:normal;font-weight:bolder;}
+	.main .first .content .left  form a{font-size:12px;text-decoration:none;color:black;}
+	.main .first .content .right  #container{width:90%;height:400px;margin:0 auto;}
+	.main .first .content .right  #container .info-title{color: white;font-size: 12px;background-color: rgba(0,155,255,0.8); line-height: 26px;padding: 0px 0 0 6px; font-weight: lighter; letter-spacing: 1px;}
+	.main .first .content .right  #container .info-content{padding: 4px;color: #666666;line-height: 23px;font-size:12px;}
+	.main .first .content .right  #container .info-content img{float: left;margin: 3px;}
+	/*second区域样式设计*/
+	.main .second{background-image:url(images/bg01.jpg);clear: both;}
+	.main .second  .content h2{text-align:center;padding:20px;}
+	.main .second .content #pic2{position:absolute;top:139px;right: 100px}
+	.main .second .content .graduShow{width:1200px;margin-right:80px;height: 400px;float: right;font-size: 0;overflow: hidden;position: relative;}
+	.main .second .content  .graduShow .pic{position: absolute;left: 0;top: 0;width:3000px;height: 180px;}
+	.main .second .content  .graduShow .pic a{width:300px;height:400px;overflow:hidden;position:relative;}
+	.main .second .content  .graduShow .pic span{position:absolute;top:0;left:0;width:100%;height:100%;}
+	.main .second .content .graduShow .pic img{width:300px;height:400px;float: left;border:8px solid transparent;box-sizing:border-box;position:relative;}
+	.main .second .content .graduShow .pic img::after{position:absolute;width:100%;height:100%;background:rgba(0,0,0,.5);content:'';}
+	.main .second .content .graduShow .slow{transition:3s;}
+          	span#yhmts,span#mmts,span#dhts,span#yjts,span#ces{width:140px;height:30px;line-height:30px;background:#2DCB70;margin-left:10px;color:#fff;position:relative;display:inline-block;text-align:center;opacity:0;transition:0.5s;}
+          	span#ces{background:orange;}
+          span#yhmts::after,span#mmts::after,span#dhts::after,span#yjts::after{content:"";position:absolute;width:0;height:0;overflow:hidden;border:7px solid transparent;border-right-color:#2DCB70;top:35%;left:-12px;}
+          span#ces::after{content:"";position:absolute;width:0;height:0;overflow:hidden;border:7px solid transparent;border-right-color:orange;top:35%;left:-12px;}
+	/*footer区域样式设计*/
+	footer{width:100%;height:250px;background:#111;display:inline-block;}
+	footer .about{width:80%;height:190px;margin:0 auto;box-sizing:border-box;padding:5px;margin-top:15px;}
+	footer dl{width:20%;height:190px;box-sizing:border-box;padding: 15px 16px 0 0;float: left;text-align: right;line-height: 22px;border-right: 1px solid #333;}
+	footer dl dt{font-weight:bolder;color:#aaa;margin-bottom:10px;}
+	footer dl dd{height: 24px; line-height: 24px;}
+	footer dl dd:hover a{color:green;}
+	footer dl dd a{color:#aaa;}
+	footer dl.last{width:30%;height: 210px;box-sizing:border-box;padding: 15px 16px 0 80px;float: left;line-height: 22px;text-align:right;border-right:none;white-space:nowrap;}
+	</style>
+	<script src="js/common.js"></script>
+	<script>
+	window.onload=function(){
+		setInterval(graduShows,3800);
+	}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="nav">
+			<ul>
+				 <li class="active"><a href="index.html">首页<br><span>Home</span></a></li>
+                                                <li><a href="show.html">作品展示<br><span>Works</span></a></li>
+                                                <li><a href="command.html">名家推荐<br><span>Methods</span></a></li>
+                                                <li><a href="store.html">画廊艺馆<br><span>Contact</span></a></li>
+                                                <li><a href="news.html">新闻资讯<br><span>Contact</span></a></li>
+			</ul>
+		</div>
+		<div class="bg head">
+			<img src="images/bgs04.jpg" alt="" height="600px">
+			<div class="text">
+					<p>欢迎来到美雅，加入我们，收获更多</p>
+					<p>乐.在.欣.赏</p>
+			</div>
+		</div>
+		<div class="bg first">
+			<div class="content">
+				<h2>欢迎注册美雅</h2>
+				<div class="left">
+					<form action="" method="get">
+						<label for="p_usename">用户名:</label><input type="text" name="p_usename" id="yhm" placeholder="以字母开头" onblur="test_yhm()"><span id="yhmts"></span><br>
+						<label for="p_pwd">密码:</label><input type="password" name="p_pwd" id="mm" placeholder="请输入您的密码"  onblur="test_mm()"><span id="mmts"></span><br>
+						<label for="p_pwd">确认密码:</label><input type="password" name="p_pwd" id="ce" placeholder="请确认您的密码"  onblur="test_ce()"><span id="ces"></span><br>
+						<label for="p_phone">手机号码:</label><input type="text" name="p_phone" id="dh" placeholder="请输入您的手机号码"  onblur="test_dh()"><span id="dhts"></span><br>
+						<label for="p_email">Email:</label><input type="text" name="p_email" id="email" placeholder="请输入您的Email" onblur="test_email()"><span id="yjts"></span><br>
+						<label for="p_date">出生日期:</label><input type="date" name="p_date"><br>
+						<label for="p_gender">性别:</label><input type="radio" id="male" name="p_gender" checked>男<input type="radio"  id="famale" value="fm" name="p_gender">女<br>
+			            			<label for="">验证码:</label><input type="text" placeholder="验证码" class="confirm"><img src="2.jpg" alt=""><a href="#">看不清，换一张</a><br>
+						<label for=""></label><input type="submit" value="立即注册" class="sub" onclick="alert('您已成功注册!');"><br>
+						<label for=""></label><input type="checkbox" checked><span>我已阅读并接受<em>条款</em></span>
+					</form>
+				</div>
+				<div class="right">
+					  <div id="container" tabindex="0"></div>
+  					  <div id='panel'></div>
+  					  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=您申请的key值"></script>
+					   <script type="text/javascript">
+					    var map = new AMap.Map('container',{
+					            resizeEnable: true,
+					            zoom: 10,
+					            center: [116.480983, 40.0958]
+					    });
+					    // 添加点标记
+					    var marker = new AMap.Marker({
+					            position: [50, 39.989628]
+					    });
+					    marker.setMap(map);
+					    marker.on('click',function(e){
+					      infowindow.open(map,e.target.getPosition());
+					    })
+					    // 添加信息窗体
+					    AMap.plugin('AMap.AdvancedInfoWindow',function(){
+					       infowindow = new AMap.AdvancedInfoWindow({
+					        content: '<div class="info-title">高德地图</div><div class="info-content">'+
+					                '<img src="http://webapi.amap.com/images/amap.jpg">'+
+					                '高德是中国领先的数字地图内容、导航和位置服务解决方案提供商。<br/>'+
+					                '<a target="_blank" href = "http://mobile.amap.com/">点击下载高德地图</a></div>',
+					        offset: new AMap.Pixel(0, -30)
+					      });
+					      infowindow.open(map,[116.480983, 39.989628]);
+					    })
+					    // 添加滚动条及放大功能
+					    AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){
+					        var toolBar = new AMap.ToolBar();
+					        var scale = new AMap.Scale();
+					        map.addControl(toolBar);
+					        map.addControl(scale);
+					    })
+					   </script>
+				</div>	
+			</div>
+		</div>
+		<div class="bg second">
+			<div class="content">
+				<h2>我们的周边</h2>
+				<div class="graduShow">
+					<div class="pic slow">
+						<a href="javascript:void(0);"><img src="images/a1.jpg" alt=""><span></span></a>
+						<a href="javascript:void(0)"><img src="images/a3.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a2.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a4.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a5.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a6.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a2.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a3.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a4.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a5.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a6.jpg" alt=""></a>
+						<a href="javascript:void(0)"><img src="images/a1.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+		        <div class="about">
+		            	<dl>
+			                <dt>关于</dt>
+			                <dd><a href="">关于我们</a></dd>
+			                <dd><a href="">我们的价值观</a></dd>
+			                <dd><a href="">大事记</a></dd>
+			                <dd><a href="">版权声明</a></dd>
+			                <dd><a href="">广告服务</a></dd>
+			                <dd><a href="">联系我们</a></dd>
+		            	</dl>
+		            	<dl>
+			                <dt>帮助</dt>
+			                <dd><a href="">常见问题</a></dd>
+			                <dd><a href="">网站地图</a></dd>
+			                <dd><a href="">加入我们</a></dd>
+			                <dd><a href="">网友投稿</a></dd>
+			                <dd><a href="">友情链接</a></dd>
+			                <dd><a href="">在线留言</a></dd>
+		            	</dl>
+		            	<dl>
+			                <dt>关注</dt>
+			                <dd><a href="">新浪微博</a></dd>
+			                <dd><a href="">腾讯微博</a></dd>
+			                <dd><a href="">qq空间</a></dd>
+			                <dd><a href="">花瓣</a></dd>
+			                <dd><a href="">艺馆平台</a></dd>
+		            	</dl>
+		            	<dl class="last">
+			                <dt>我们一直在进步</dt>
+			                <dd><a href="">01月19号我们添加了新的画廊艺馆</a></dd>
+			                <dd><a href="">01月23号我们获得了一批珍藏品</a></dd>
+			                <dd><a href="">02月25号我们又有名家入驻</a></dd>
+			                <dd><a href="">.........</a></dd>
+		            	</dl>
+		        </div>
+    		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>名家推荐</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/common.js"></script>
+	<script>
+	window.onload=function(){
+		tab();
+		initParts();
+		document.getElementById('right').onclick=function(){zhuan(true);};
+		document.getElementById('left').onclick=function(){zhuan(false);};
+		toTop();
+	}
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="top_wrap">
+				<div class="logo_wrap">
+				<img src="images/logo1.png" alt="">
+				</div>
+				<ul>
+					<li>
+						<a class="button" data-title="My mission is clear" href="index.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						首页
+						</a>
+					</li>
+					<li>
+						<a class="button" data-title="My mission is clear" href="show.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						作品展示
+						</a>
+					</li>
+					<li>
+						<a class="button active" data-title="My mission is clear" href="command.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						名家推荐
+						</a>
+					</li>
+					<li>
+						<a class="button" data-title="My mission is clear" href="store.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						画廊艺馆
+						</a>
+					</li>
+					<li>
+						<a class="button" data-title="My mission is clear" href="news.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						新闻资讯
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="scommand">
+		<div class="banner">
+			<div id="main">
+				<span id='left'>&lt;</span>
+				<span id='right'>&gt;</span>
+				<div class="part part1 old"></div>
+				<div class="part part2 old"></div>
+				<div class="part part3 old"></div>
+				<div class="part part4 old"></div>
+				<div class="part part5 old"></div>
+			</div>
+			<div class="submit">
+				<div class="sup">
+					<a href="">画廊入驻</a>
+					<a href="">画廊管理</a>
+				</div>
+				<div class="sdown">
+					<a href="" class="btn">登录</a>
+					<a href="submit.html" class="btn">注册</a>
+					<a href="" class="text">画家会员介绍</a>
+					<span>|</span>
+					<a href="" class="text">黄页使用指南</a>
+				</div>
+			</div>
+		</div>
+		<div class="show">
+			<div class="sleft">
+				<h2><i>1F</i>书画中国</h2>
+				<div>
+					<dt><a href=""><img src="images/gg3.jpg" alt="" width="230" height="270"></a></dt>
+					<dd>
+						<h4>人物小品之四</h4>
+						<p>作者：王锋</p>
+						<p>画廊：子闻榭艺术空间</p>
+					</dd>
+				</div>
+			</div>
+			<div class="sright">
+				<div class="tab">
+					<ul>
+						<li class="outer">精品推荐</li>
+						<li>国画</li>
+						<li>书法</li>
+					</ul>
+					<a href="">我要求购</a>
+				</div>
+				<!-- 精品推荐 -->
+				<div class="tab_show spe">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/sb01.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb07.png" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+				<!-- 国画 -->
+				<div class="tab_show">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/m01.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m07.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/m08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+				<!-- 书法 -->
+				<div class="tab_show">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/ff01.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff07.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/ff08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="show">
+			<div class="sleft">
+				<h2><i>2F</i>油画与当代艺术</h2>
+				<div>
+					<dt><a href=""><img src="images/b01.jpg" alt="" width="230" height="270"></a></dt>
+					<dd>
+						<h4>人物小品之四</h4>
+						<p>作者：王锋</p>
+						<p>画廊：子闻榭艺术空间</p>
+					</dd>
+				</div>
+			</div>
+			<div class="sright">
+				<div class="tab">
+					<ul>
+						<li class="outer">精品推荐</li>
+						<li>油画</li>
+						<li>版画</li>
+						<li>雕塑</li>
+						<li>当代水墨</li>
+					</ul>
+					<a href="">我要求购</a>
+				</div>
+				<!-- 精品推荐 -->
+				<div class="tab_show spe">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/s02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s07.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/s08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+				<!-- 油画 -->
+				<div class="tab_show">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/sy01.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy07.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sy08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+				<!-- 版画 -->
+				<div class="tab_show">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/sb01.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb07.png" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+				<!-- 雕塑 -->
+				<div class="tab_show">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/d01.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/d02.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/d03.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb04.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb05.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb06.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb07.png" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sb08.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+				<!-- 当代水墨 -->
+				<div class="tab_show">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/sr1.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr2.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr3.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr4.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr5.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr6.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr7.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/sr8.jpg" alt="">
+						     	</a>
+						      	<h3>
+							      	<a href="">范海龙 微风</a>
+							      	<a href="" class="price">议价</a>
+						     	</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="" id="back">
+			<b></b>
+			<div class="back_show">
+				<ul>
+					<li><img src="images/w01.jpg" alt=""><br>微店铺微信</li>
+					<li><img src="images/w02.png" alt=""><br>微博</li>
+					<li><img src="images/w03.jpg" alt=""><br>画廊黄页微信</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="totop" alt="回到顶部"></a>
+			<a href="" class="message" alt="意见反馈"></a>
+		</div>
+		<div class="about">
+			<dl>
+				<dt>关于</dt>
+				<dd><a href="">关于我们</a></dd>
+				<dd><a href="">我们的价值观</a></dd>
+				<dd><a href="">大事记</a></dd>
+				<dd><a href="">版权声明</a></dd>
+				<dd><a href="">广告服务</a></dd>
+				<dd><a href="">联系我们</a></dd>
+			</dl>
+			<dl>
+				<dt>帮助</dt>
+				<dd><a href="">常见问题</a></dd>
+				<dd><a href="">网站地图</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">网友投稿</a></dd>
+				<dd><a href="">友情链接</a></dd>
+				<dd><a href="">在线留言</a></dd>
+			</dl>
+			<dl>
+				<dt>关注</dt>
+				<dd><a href="">新浪微博</a></dd>
+				<dd><a href="">腾讯微博</a></dd>
+				<dd><a href="">qq空间</a></dd>
+				<dd><a href="">花瓣</a></dd>
+				<dd><a href="">艺馆平台</a></dd>
+			</dl>
+			<dl class="last">
+				<dt>我们一直在进步</dt>
+				<dd><a href="">01月19号我们添加了新的画廊艺馆</a></dd>
+				<dd><a href="">01月23号我们获得了一批珍藏品</a></dd>
+				<dd><a href="">02月25号我们又有名家入驻</a></dd>
+				<dd><a href="">.........</a></dd>
+			</dl>
+		</div>
+	</footer>
+</body>
+</html>

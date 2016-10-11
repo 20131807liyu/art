@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作品展示</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.transform-0.9.3.min_.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		$(function(){
+			loopPlayerInit();
+			toTop();
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="top_wrap">
+				<div class="logo_wrap">
+				<img src="images/logo.png" alt="">
+				</div>
+				<ul>
+					<li>
+						<a class="button" data-title="My mission is clear" href="index.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						首页
+						</a>
+					</li>
+					<li>
+						<a class="button active" data-title="My mission is clear" href="show.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						作品展示
+						</a>
+					</li>
+					<li>
+						<a class="button" data-title="My mission is clear" href="command.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						名家推荐
+						</a>
+					</li>
+					<li>
+						<a class="button" data-title="My mission is clear" href="store.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						画廊艺馆
+						</a>
+					</li>
+					<li>
+						<a class="button" data-title="My mission is clear" href="news.html">
+						<span class="line line-top"></span>
+						<span class="line line-right"></span>
+						<span class="line line-bottom"></span>
+						<span class="line line-left"></span>
+						新闻资讯
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="title"><h2>名作欣赏</h2></div>
+	<div class="main-box">
+		<ul>
+			<li><img src="images/paint01.jpg" alt=""></li>
+			<li><img src="images/paint02.jpg" alt=""></li>
+			<li><img src="images/paint03.jpg" alt=""></li>
+			<li><img src="images/r1.jpg" alt=""></li>
+		</ul>
+		<div class="but">
+			<a class="butleft" href="">&lt;</a>
+			<a class="butright" href="">&gt;</a>
+			<a class="butplay" href="">play</a>
+		</div>
+	</div>
+	<div class="bshow">
+		<div class="show" id="">
+			<h2>大师名作</h2>
+			<div class="view" id="viewall_show">
+				<ul>
+					<li data-scroll-reveal="enter top">
+						<a href="" class="view_img">
+							<img class="img-responsive"  src="images/zz1.jpg">
+							<span class="tit">小女孩</span>
+							<div class="author">
+								<img class="imgde" src="images/p01.jpg" >
+								<span>风城<br>2016.04.14</span>
+							</div>	
+						</a>
+					</li>
+					<li data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s">
+						<a href="" class="view_img">
+							<img class="img-responsive"  src="images/zz2.jpg">
+							<span class="tit">小女孩</span>
+							<div class="author">
+								<img class="imgde" src="images/p02.jpg" >
+								<span>一米阳光<br>2016.04.14</span>
+							</div>		
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 0.5s and move 200px">
+						<a href="" class="view_img">
+							<img class="img-responsive"  src="images/zz3.jpg">
+							<span class="tit">小女孩</span>
+							<div class="author">
+								<img class="imgde" src="images/p03.jpg" >
+								<span>飞羽<br>2016.04.14</span>
+							</div>	
+						</a>
+					</li>
+					<li data-scroll-reveal="enter bottom over 1s and move 300px after 0.3s">
+						<a href="" class="view_img">
+							<img class="img-responsive"  src="images/zz4.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p04.jpg" >
+								<span>青鸾<br>2016.04.14</span>
+							</div>	
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li data-scroll-reveal="enter left">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz5.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p05.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 3s after 0.5s">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz8.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p02.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter bottom over 1s and move 100px">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz9.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p01.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 0.5s and move 200px">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz13.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p05.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li data-scroll-reveal="enter left">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz13.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p07.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 3s after 0.5s">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz1.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p08.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter bottom over 1s and move 100px">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz7.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p05.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 0.5s and move 200px">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz5.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p05.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li data-scroll-reveal="enter right over 0.6s after 0.2s">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz7.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/zz8.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter bottom over 1s and move 100px">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz9.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p08.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 0.5s and move 200px">
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz10.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p09.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+					<li data-scroll-reveal="enter top over 3s after 0.5s"> 
+						<a class="view_img" href="#">
+							<img class="img-responsive"  src="images/zz12.jpg">
+							<span class="tit">手工皂的皮肤测试</span>
+							<div class="author">
+								<img class="imgde" src="images/p02.jpg" >
+								<span>向晚<br>2016.04.14</span>
+							</div>						
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="" id="back">
+			<b></b>
+			<div class="back_show">
+				<ul>
+					<li><img src="images/w01.jpg" alt=""><br>微店铺微信</li>
+					<li><img src="images/w02.png" alt=""><br>微博</li>
+					<li><img src="images/w03.jpg" alt=""><br>画廊黄页微信</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="totop" alt="回到顶部"></a>
+			<a href="" class="message" alt="意见反馈"></a>
+		</div>
+		<div class="about">
+			<dl>
+				<dt>关于</dt>
+				<dd><a href="">关于我们</a></dd>
+				<dd><a href="">我们的价值观</a></dd>
+				<dd><a href="">大事记</a></dd>
+				<dd><a href="">版权声明</a></dd>
+				<dd><a href="">广告服务</a></dd>
+				<dd><a href="">联系我们</a></dd>
+			</dl>
+			<dl>
+				<dt>帮助</dt>
+				<dd><a href="">常见问题</a></dd>
+				<dd><a href="">网站地图</a></dd>
+				<dd><a href="">加入我们</a></dd>
+				<dd><a href="">网友投稿</a></dd>
+				<dd><a href="">友情链接</a></dd>
+				<dd><a href="">在线留言</a></dd>
+			</dl>
+			<dl>
+				<dt>关注</dt>
+				<dd><a href="">新浪微博</a></dd>
+				<dd><a href="">腾讯微博</a></dd>
+				<dd><a href="">qq空间</a></dd>
+				<dd><a href="">花瓣</a></dd>
+				<dd><a href="">艺馆平台</a></dd>
+			</dl>
+			<dl class="last">
+				<dt>我们一直在进步</dt>
+				<dd><a href="">01月19号我们添加了新的画廊艺馆</a></dd>
+				<dd><a href="">01月23号我们获得了一批珍藏品</a></dd>
+				<dd><a href="">02月25号我们又有名家入驻</a></dd>
+				<dd><a href="">.........</a></dd>
+			</dl>
+		</div>
+	</footer>
+	<script src="js/scrollReveal.js"></script> 
+	<script>
+	window.scrollReveal=new scrollReveal({reset:true});
+	</script>
+</body>
+
+</html>
